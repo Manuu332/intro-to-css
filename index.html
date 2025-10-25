@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demonstration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">BoxModel Co.</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Master the CSS Box Model</h2>
+                <p class="hero-text">Learn how padding, margins, and borders work together to create beautiful layouts.</p>
+                <button class="btn btn-primary">Get Started</button>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="about" class="features">
+        <div class="container">
+            <h2 class="section-title">Understanding the Box Model</h2>
+            <div class="features-grid">
+                <!-- Content Box -->
+                <div class="feature-card">
+                    <div class="card-icon content-box">Content</div>
+                    <h3 class="card-title">Content Area</h3>
+                    <p class="card-text">The actual content of the box, where text and images appear. This is the innermost part of the box model.</p>
+                    <div class="dimensions">Width × Height</div>
+                </div>
+
+                <!-- Padding Box -->
+                <div class="feature-card">
+                    <div class="card-icon padding-box">Padding</div>
+                    <h3 class="card-title">Padding</h3>
+                    <p class="card-text">Clears an area around the content. The padding is transparent and inside the element's border.</p>
+                    <div class="dimensions">Space Inside</div>
+                </div>
+
+                <!-- Border Box -->
+                <div class="feature-card">
+                    <div class="card-icon border-box">Border</div>
+                    <h3 class="card-title">Border</h3>
+                    <p class="card-text">A border that goes around the padding and content. It can be styled with different colors and widths.</p>
+                    <div class="dimensions">Outline</div>
+                </div>
+
+                <!-- Margin Box -->
+                <div class="feature-card">
+                    <div class="card-icon margin-box">Margin</div>
+                    <h3 class="card-title">Margin</h3>
+                    <p class="card-text">Clears an area outside the border. The margin is transparent and creates space between elements.</p>
+                    <div class="dimensions">Space Outside</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Box Model Demo Section -->
+    <section id="services" class="demo-section">
+        <div class="container">
+            <h2 class="section-title">Interactive Box Model Demo</h2>
+            
+            <!-- Box Model Visualization -->
+            <div class="box-model-demo">
+                <div class="margin-box-demo">
+                    <span class="box-label">Margin</span>
+                    <div class="border-box-demo">
+                        <span class="box-label">Border</span>
+                        <div class="padding-box-demo">
+                            <span class="box-label">Padding</span>
+                            <div class="content-box-demo">
+                                <span class="box-label">Content</span>
+                                <p>This is the actual content area where your text and images appear.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Explanation Cards -->
+            <div class="explanation-cards">
+                <div class="explanation-card">
+                    <h3>Content Box</h3>
+                    <p>The innermost area containing your actual content. Controlled by <code>width</code> and <code>height</code> properties.</p>
+                </div>
+                <div class="explanation-card">
+                    <h3>Padding</h3>
+                    <p>Space between content and border. Creates internal spacing. Use <code>padding</code> property.</p>
+                </div>
+                <div class="explanation-card">
+                    <h3>Border</h3>
+                    <p>The frame around padding and content. Styled with <code>border</code>, <code>border-width</code>, etc.</p>
+                </div>
+                <div class="explanation-card">
+                    <h3>Margin</h3>
+                    <p>Space outside the border. Creates external spacing between elements. Use <code>margin</code> property.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Email: info@boxmodel.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Address: 123 CSS Street, Webville</p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-input" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BoxModel Co. All rights reserved.</p>
+            <p>Demonstrating CSS Box Model Principles</p>
+        </div>
+    </footer>
+</body>
+</html>
